@@ -1,0 +1,103 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #eef2f7;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-container, 
+.form-container {
+    background: #ffffff;
+    margin: 10px 0 18px 0;
+    width: 400px;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 18px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #f8f9fc;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #4099ff;
+    background: #fff;
+    outline: none;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+label {
+    font-size: 18px;
+    color: #444;
+    display: block;
+    text-align: left;
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.1);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #4099ff;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover {
+    background: #357ab8;
+}
+
+#statusMsg, .message {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.login-container button {
+    width: 80%;
+    margin-top: 15px;
+}
+
+@media (max-width: 400px) {
+  form#feedbackForm {
+    width: 90%;
+    padding: 20px;
+  }
+}
+

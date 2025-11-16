@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-container">
+<form id="feedbackForm">
+  <h3>Feedback Form</h3>
+
+  <input type="text" id="name" placeholder="Full Name" required>
+  <input type="email" id="email" placeholder="Email ID" required>
+  <input type="tel" id="phone" placeholder="Phone Number" required>
+  <textarea id="messageBox" placeholder="Message" required></textarea>
+
+  <label>
+    <input type="checkbox" id="subscribe"> Subscribe to newsletter
+  </label>
+
+  <label><h5>Department:</h5></label>
+  <select id="department">
+    <option value="Sales">Sales</option>
+    <option value="Support">Support</option>
+    <option value="HR">HR</option>
+  </select>
+
+  <button type="submit">Submit</button>
+
+  <p id="statusMsg"></p>
+</form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
