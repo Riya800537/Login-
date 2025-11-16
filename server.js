@@ -9,9 +9,9 @@ const PORT = 3000;
 app.use(cors());
 app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static("public"));  // <-- THIS SERVES feedback.html CORRECTLY
+app.use(express.static("public"));  
 
-// MYSQL CONNECTION
+
 const db = mysql.createConnection({
     host: "localhost",
     user: "root",
@@ -32,7 +32,6 @@ app.get("/submit-feedback", (req, res) => {
     res.send("Use POST method only.");
 });
 
-// INSERT FEEDBACK
 app.post("/submit-feedback", (req, res) => {
     const { name, email, phone, department, message, subscribe } = req.body;
 
@@ -67,6 +66,7 @@ app.post("/submit-feedback", (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server running at: http://localhost:${PORT}`);
 });
+
 
 
 
